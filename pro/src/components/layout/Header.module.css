@@ -1,0 +1,47 @@
+.header {
+    width: 100%;
+    background-color: #f6f5ef;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.header a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+.logo h1 {
+    font-size: 0;
+}
+
+.logo img {
+    width: 40vw;
+    padding-left: 60px;
+    box-sizing: border-box;
+}
+
+.checkin h2 {
+    font-size: 0;
+}
+
+.checkin img {
+    width: 5vw;
+    padding-left: 45px;
+}
+
+.header ul {
+    display: flex;
+}
+
+.header ul li {
+    list-style: none;
+}
+
+.headerMenu img {
+    width: 5vw;
+    padding-right: 25px;
+}
