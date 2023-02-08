@@ -3,6 +3,8 @@
     margin : auto;
     padding: 10px 10px;
     margin-bottom: 20px;
+    margin-top: 140px;
+    /* margin-top은 section 디자인 변경할때 손보기 header에 먹히는 issue 있음 */
 }
 
 .MainCard img {
