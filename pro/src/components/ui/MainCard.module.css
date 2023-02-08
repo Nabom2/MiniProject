@@ -1,0 +1,37 @@
+/* db데이터의 eventproduct 모양을 다듬어 보도록 하자 */
+.MainCard {
+    margin : auto;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+}
+
+.MainCard img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.MainCard p:last-child{
+    color: red;
+}
+
+.MainCard a {
+    text-decoration: none;
+    color: #222;
+}
+
+.cartButton {
+    width: 30px;
+    height: 30px;
+    background-color: #ffb71b;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.cartButton img {
+    width: 20px;
+    height: 20px;
+}

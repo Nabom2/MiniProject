@@ -9,6 +9,7 @@ import LogIn from './components/pages/LogIn';
 import LogOut from './components/pages/LogOut';
 import SignUp from './components/pages/SignUp';
 import './App.css';
+import Footer from './components/layout/Footer';
 
 
 function App() {
@@ -20,11 +21,12 @@ function App() {
         <Route path='/' element={<Main/>}/>
         <Route path='/cart' element={<Cart/>}/>
         <Route path='/check-in' element={<CheckIn/>}/>
-        <Route path='/product-detail' element={<ProductDetail/>}/>
+        <Route path='/product-detail/:id' element={<ProductDetail/>}/>
         <Route path='/login' element={<LogIn/>}/>
         <Route path='/logout' element={<LogOut/>}/>
         <Route path='/sign-up' element={<SignUp/>}/>
       </Routes>
+      <Footer/>
     </BrowserRouter>
     </div>
    );

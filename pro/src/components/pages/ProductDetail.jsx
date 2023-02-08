@@ -2,7 +2,7 @@ import React from 'react';
 
 function ProductDetail() {
     return ( 
-        <>productdetail</>
+        <>productDetail</>
      );
 }
 

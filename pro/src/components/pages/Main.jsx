@@ -1,9 +1,12 @@
 import React from 'react';
-import ProductList from './ProductList';
+import MainSection from '../ui/MainSection';
+import styles from './Main.module.css';
 
 function Main() {
     return ( 
-        <ProductList/>
+        <div className={styles.MainWrap}>
+            <MainSection/>
+        </div>
      );
 }
 

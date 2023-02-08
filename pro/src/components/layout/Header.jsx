@@ -1,9 +1,13 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import style from './Header.module.css';
 import { logoImg, checkImg, headerMenu } from '../../data/HeaderMenu';
 
 function Header() {
+
+    const location = useLocation();
+    console.log(location.pathname);
+
     return ( 
         <header>
             <div className={style.header}>

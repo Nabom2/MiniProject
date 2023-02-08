@@ -1,6 +1,7 @@
 import loginIcon from '../components/images/account.png'
 import cartIcon from '../components/images/cart.png'
 import checkinIcon from '../components/images/pay.png'
+import cartIcon_Main from '../components/images/cart1.png'
 
 export const headerMenu = [
     {
@@ -20,3 +21,5 @@ export const headerMenu = [
 export const logoImg = 'https://www.emart24.co.kr/assets/assets/imgs/logo.png'
 
 export const checkImg = checkinIcon
+
+export const cartButtonimg = cartIcon_Main
