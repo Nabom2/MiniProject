@@ -26,10 +26,8 @@ return (
             <p>홈 > {product.category}</p>
             <img src={product.thumbnail} alt={product.description}/>
             <h2>{product.name}</h2>
-            {/* <p>{product.price}</p>
-            <p>{product.discount}</p> */}
-            <p><span>{product.price - (product.price * product.discount)}원</span></p>
             <p>⭐ {product.rating}</p>
+            <p><span>{product.price - (product.price * product.discount)}원</span></p>
             <p>{product.description}</p>
             <p>제조사 : {product.brand}</p>
         </>)}

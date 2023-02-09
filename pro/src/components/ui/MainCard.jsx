@@ -1,15 +1,17 @@
 import React from 'react';
-import { Link, Navigate, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import style from './MainCard.module.css';
-import { cartButtonimg } from '../../data/HeaderMenu';
+import { cartButtonimg } from '../../data/headerMenu';
 
 function MainCard({product}) {
 
     const userId = 1;
 
+    const Navigate = useNavigate();
+
     const handleAddCart = () => {
         fetch('http://localhost:3001/carts', {
-    method: 'POST',
+    method: 'POST',//axios.post를 써보자
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
         userId: userId,

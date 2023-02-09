@@ -1,0 +1,53 @@
+.cartListCard {
+    width: 100%;
+    margin-top: 140px;
+    padding-left: 15px;
+}
+
+
+.cartListCard h4 {
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.cartListCardInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cartListCard img {
+    width: 40vw;
+    height: auto;
+    border-radius: 30px;
+}
+
+.cartStatus{
+    width: 40vw;
+}
+
+.qtyHandler{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.deleteButton img{
+    width: 20px;
+    height: 20px;
+}
+
+.subButton img{
+    width: 15px;
+    height: 15px;
+}
+
+.addButton img{
+    width: 15px;
+    height: 15px;
+}
+
+.cartStatus p:last-child{
+    color: red;
+    text-align: right;
+}
