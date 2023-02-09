@@ -19,7 +19,7 @@ function Footer() {
                     }
                 </ul>
             </nav>
-            <p className={style.p}><br/>대표이사: 김장욱 / 사업자등록번호: 105-86-92454</p>
+            <p className={style.p}><br/>제작자: 허선아 / 연락처: dinuovo26@naver.com</p>
         </footer>
      );
 }
