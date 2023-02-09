@@ -1,0 +1,20 @@
+
+.productWrap {
+    margin : auto;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    margin-top: 80px;
+}
+
+.productWrap img {
+    width: 100%;
+    height: auto;
+}
+
+.productWrap p:nth-child(4){
+    color: red;
+}
+
+.productWrap p:first-child {
+    color: lightgray;
+}

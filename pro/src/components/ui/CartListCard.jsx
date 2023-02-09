@@ -3,7 +3,7 @@ import style from './CartListCard.module.css';
 import { useState } from 'react';
 import { useEffect } from 'react';
 
-function CartListCard() {
+function CartListCard({cartData}) {
 
     const [cartListData, setcartListData] = useState(
         {
@@ -16,7 +16,7 @@ function CartListCard() {
             quantity: cartData.quantity,
         }
     )
-// Cart에서 mapping시 cartData 선언해줬는데 계속 not define 뜸
+
     useEffect(() => {
         fetch(`http://localhost:3001/products/${cartListData.id}`)
         .then(res => res.json())
