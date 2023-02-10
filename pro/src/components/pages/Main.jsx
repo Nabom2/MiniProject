@@ -7,6 +7,7 @@ function Main() {
         <div className={styles.MainWrap}>
             <MainSection/>
         </div>
+    
      );
 }
 

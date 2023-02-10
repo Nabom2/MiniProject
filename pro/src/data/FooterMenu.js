@@ -1,5 +1,5 @@
 
-export const FooterMenu = [
+export const footerMenu = [
     {
       id: 1,
       name: '개인정보 처리방침'

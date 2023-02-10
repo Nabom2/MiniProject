@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FooterMenu } from '../../data/FooterMenu';
+import { footerMenu } from '../../data/footerMenu';
 import style from './Footer.module.css';
 
 function Footer() {
@@ -9,7 +9,7 @@ function Footer() {
         <footer className={style.des}>
             <nav>
                 <ul>
-                    { FooterMenu.map( menu => (
+                    { footerMenu.map( menu => (
                         <li key={menu.id}>
                             <Link to = {menu.link}>
                                 {menu.name}

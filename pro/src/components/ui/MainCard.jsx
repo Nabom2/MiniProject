@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import style from './MainCard.module.css';
-import { cartButtonimg } from '../../data/HeaderMenu';
+import { cartButtonimg } from '../../data/headerMenu';
 
 function MainCard({product}) {
 
@@ -11,7 +11,7 @@ function MainCard({product}) {
 
     const handleAddCart = () => {
         fetch('http://localhost:3001/carts', {
-    method: 'POST',
+    method: 'POST',//원하는 기능 구현 완료 후 axios를 써보자
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
         userId: userId,

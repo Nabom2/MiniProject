@@ -1,19 +1,25 @@
 
 .productWrap {
     margin : auto;
-    padding: 10px 10px;
+    padding: 10px 30px;
     margin-bottom: 20px;
     margin-top: 80px;
+
 }
 
 .productWrap img {
     width: 100%;
     height: auto;
+    border-radius: 30px;
 }
 
-.productWrap p:nth-child(4){
+.productWrap p:nth-child(5){
     color: red;
 }
+
+/* .productWrap span {
+    후처리
+} */
 
 .productWrap p:first-child {
     color: lightgray;

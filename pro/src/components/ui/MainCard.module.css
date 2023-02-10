@@ -1,7 +1,7 @@
 /* db데이터의 eventproduct 모양을 다듬어 보도록 하자 */
 .MainCard {
     margin : auto;
-    padding: 10px 10px;
+    padding: 10px 20px;
     margin-bottom: 20px;
     margin-top: 140px;
     /* margin-top은 section 디자인 변경할때 손보기 header에 먹히는 issue 있음 */
@@ -10,6 +10,7 @@
 .MainCard img {
     width: 100%;
     height: auto;
+    border-radius: 30px;
 }
 
 .MainCard p:last-child{
