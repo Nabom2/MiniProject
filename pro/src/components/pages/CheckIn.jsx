@@ -1,4 +1,5 @@
 import React from 'react';
+import withAuth from '../withAuth/withAuth';
 import style from './CheckIn.module.css';
 
 function CheckIn() {
@@ -9,4 +10,4 @@ function CheckIn() {
      );
 }
 
-export default CheckIn;
+export default withAuth(CheckIn);
