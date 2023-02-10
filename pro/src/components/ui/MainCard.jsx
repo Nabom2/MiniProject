@@ -1,11 +1,13 @@
 import React from 'react';
-import { Link, Navigate, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import style from './MainCard.module.css';
 import { cartButtonimg } from '../../data/HeaderMenu';
 
 function MainCard({product}) {
 
     const userId = 1;
+
+    const Navigate = useNavigate();
 
     const handleAddCart = () => {
         fetch('http://localhost:3001/carts', {

@@ -189,6 +189,18 @@
       "productId": 1,
       "quantity": 1,
       "id": 5
+    },
+    {
+      "userId": 1,
+      "productId": 1,
+      "quantity": 1,
+      "id": 6
+    },
+    {
+      "userId": 1,
+      "productId": 1,
+      "quantity": 1,
+      "id": 7
     }
   ]
 }

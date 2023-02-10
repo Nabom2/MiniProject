@@ -18,7 +18,7 @@ function CartListCard({cartData}) {
     )
 
     useEffect(() => {
-        fetch(`http://localhost:3001/products/${cartListData.id}`)
+        fetch(`http://localhost:3001/products/${cartData.id}`)
         .then(res => res.json())
         .then(data => {
             setcartListData({
@@ -28,7 +28,7 @@ function CartListCard({cartData}) {
                 productPrice: data.price               
             })
         })
-    },[cartListData])
+    },[cartData.id])
 
     return ( 
         <div className={style.cartListCard}>
