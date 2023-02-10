@@ -29,7 +29,7 @@ function LogIn() {
         setPass(e.target.value);
     }
 
-    const handleLogIn = () => {
+    const handleLogIn = (e) => {
         fetch(`http://localhost:3001/users?email=${email}&password=${pass}`, {
             method: 'GET',
             headers: { 'Content-Type': 'application/json'}
@@ -39,9 +39,10 @@ function LogIn() {
             console.log(data)
             // setEmail(data)
             // setPass(data)
-            setLogin(true)
+            e.preventDefault(); 
+            setLogin(true);
             if(data[0].password === pass) {
-                alert('로그인 성공했습니다.');
+                alert('환영합니다 이마트 무인편의점 매장입니다. 입장을 위해 QR코드 발급 부탁드립니다.');
                 Navigate('/check-in');
             } else {
                 alert('등록되지 않은 회원입니다.');
@@ -52,6 +53,8 @@ function LogIn() {
 
     return ( 
         <div>
+            { login ?
+        <form onClick={handleLogIn}>
         <div className={style.logInWrap}>
 
             <div className={style.loginPic}><img src={loginImg} alt='login image'/></div>
@@ -74,23 +77,19 @@ function LogIn() {
                 </div>  
 
                 <div>
-                    <button onClick={handleLogIn} className={style.loginButton}>로그인</button>
+                    <button onSubmit={handleLogIn} onClick={handleLogIn} className={style.loginButton}>로그인</button> 
                 </div>
+                
         </div>
+        </form>
         <div className={style.relativeLink}>
 
         <div className={style.seekPass}>비밀번호를 잊어버리셨나요?<Link to='/seeking-password'><span>비밀번호찾기</span></Link></div>
 
         <div className={style.signUp}>계정이 없으신가요?<Link to='/sign-up'><span>가입하기</span></Link></div>
         </div>
+: <button onSubmit={handleLogIn} onClick={handleLogIn} className={style.logoutButton}>로그아웃</button> }
         </div>
-        // <div className={style.logInWrap}>
-           
-        //         <input />
-        //         <input />
-        //         <button onClick={handleLogIn}>로그인</button>
-           
-        // </div>
      );
 }
 

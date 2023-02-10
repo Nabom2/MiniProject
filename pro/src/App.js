@@ -10,6 +10,8 @@ import SignUp from './components/pages/SignUp';
 import './App.css';
 import Footer from './components/layout/Footer';
 import SeekingPass from './components/pages/SeekingPass';
+import { useRecoilValue } from 'recoil';
+import { logInState } from './state/logInState';
 
 function App() {
 

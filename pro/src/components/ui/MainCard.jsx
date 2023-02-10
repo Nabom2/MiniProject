@@ -11,7 +11,7 @@ function MainCard({product}) {
 
     const handleAddCart = () => {
         fetch('http://localhost:3001/carts', {
-    method: 'POST',//axios.post를 써보자
+    method: 'POST',//원하는 기능 구현 완료 후 axios를 써보자
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
         userId: userId,
