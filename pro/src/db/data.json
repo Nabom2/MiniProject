@@ -154,47 +154,17 @@
     },
     {
       "id": 2,
-      "name": "안영진",
-      "email": "beat1103@gmail.com",
-      "password": "1234"
+      "name": "허선아",
+      "email": "dinuovo26@naver.com",
+      "password": "2345"
     }
   ],
   "carts": [
     {
       "userId": 1,
       "productId": 2,
-      "quantity": 1,
-      "id": 5
-    },
-    {
-      "userId": 1,
-      "productId": 4,
       "quantity": 4,
-      "id": 6
-    },
-    {
-      "userId": 1,
-      "productId": 7,
-      "quantity": 1,
-      "id": 7
-    },
-    {
-      "userId": 1,
-      "productId": 1,
-      "quantity": 1,
-      "id": 8
-    },
-    {
-      "userId": 1,
-      "productId": 1,
-      "quantity": 1,
-      "id": 9
-    },
-    {
-      "userId": 1,
-      "productId": 1,
-      "quantity": 1,
-      "id": 10
+      "id": 2
     }
   ]
 }

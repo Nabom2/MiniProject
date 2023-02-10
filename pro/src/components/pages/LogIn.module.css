@@ -1,0 +1,68 @@
+.logInWrap{
+    margin: 180px auto;
+    background-color: #57565A;
+    width: 56vw;
+    height: 78vw;;
+    border-radius: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.loginPic img {
+    margin-top: 3vw;
+    width : 50vw;
+    height: 50vw;
+    margin-bottom: -12.8vw;
+    border-radius: 20px;
+}
+
+.input {
+    width: 49vw;
+    height: 8vw;
+    outline: none;
+}
+
+.input:focus-within {
+    border: 1px solid #FAB427;
+}
+
+.input::placeholder {
+    color : #FAB427;
+}
+
+.realativeLink {
+    flex: 1;
+}
+
+.seekPass {
+    color : #757575;
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.seekPass span {
+    color: #FAB427;
+    text-decoration-line: none;
+}
+
+.signUp {
+    color : #757575;
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 100px;
+}
+
+.signUp span {
+    color: #FAB427;
+}
+
+
+.loginButton {
+    border: none;
+    background-color: #57565A;
+    cursor: pointer;
+    font-size: 8vw;
+    color: #FAB427;
+
+}

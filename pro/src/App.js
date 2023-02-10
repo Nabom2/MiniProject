@@ -6,29 +6,29 @@ import Main from './components/pages/Main';
 import CheckIn from './components/pages/CheckIn';
 import ProductDetail from './components/pages/ProductDetail';
 import LogIn from './components/pages/LogIn';
-import LogOut from './components/pages/LogOut';
 import SignUp from './components/pages/SignUp';
 import './App.css';
 import Footer from './components/layout/Footer';
-
+import SeekingPass from './components/pages/SeekingPass';
 
 function App() {
+
   return ( 
-    <div className='AppWrap'>
-    <BrowserRouter>
-      <Header/>
-      <Routes>
-        <Route path='/' element={<Main/>}/>
-        <Route path='/cart' element={<Cart/>}/>
-        <Route path='/check-in' element={<CheckIn/>}/>
-        <Route path='/product-detail/:id' element={<ProductDetail/>}/>
-        <Route path='/login' element={<LogIn/>}/>
-        <Route path='/logout' element={<LogOut/>}/>
-        <Route path='/sign-up' element={<SignUp/>}/>
-      </Routes>
-      <Footer/>
-    </BrowserRouter>
-    </div>
+      <div className='AppWrap'>
+        <BrowserRouter>
+            <Header/>
+                <Routes>
+                  <Route path='/' element={<Main/>}/>
+                  <Route path='/cart' element={<Cart/>}/>
+                  <Route path='/check-in' element={<CheckIn/>}/>
+                  <Route path='/product-detail/:id' element={<ProductDetail/>}/>
+                  <Route path='/login' element={<LogIn/>}/>
+                  <Route path='/seeking-password' element={<SeekingPass/>}/>
+                  <Route path='/sign-up' element={<SignUp/>}/>
+                </Routes>
+            <Footer/>
+        </BrowserRouter>
+      </div>
    );
 }
 

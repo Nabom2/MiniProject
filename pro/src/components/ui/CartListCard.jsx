@@ -109,8 +109,7 @@ function CartListCard({cartData, deleteCheck, setdeleteCheck}) {
                     </div>
                     </div>
             </div>
-            // {/* <hr/>
-            // </> */} 전체적인 기능구현후 디자인 다듬는 단계에서 css issue를 해결하자
+            
      );
 }
 

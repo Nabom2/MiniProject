@@ -29,6 +29,7 @@
 
 .des {
     background-color : #f4f4f4;
+    text-decoration: none;
 }
 
 .des nav ul li a:hover {
