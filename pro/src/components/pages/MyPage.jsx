@@ -5,6 +5,7 @@ import { useRecoilState, useRecoilValue } from 'recoil';
 import { logInState } from '../../state/logInState';
 import { Link } from 'react-router-dom'
 import { userNameState } from '../../state/userNameState';
+import { couponImg ,billImg, documentImg, payImg } from'../../data/headerMenu.js';
 
 function MyPage() {
 
@@ -18,7 +19,7 @@ function MyPage() {
                 <nav>
                     <ul>
                         <li><button onClick={()=>setIsLogin(false)}><Link to='/'>로그아웃</Link></button></li>   
-                        <li><button><Link to='/SeekingPass'>정보수정</Link></button></li>
+                        <li><button><Link to='/seeking-password'>정보수정</Link></button></li>
                     </ul>
                 </nav>
             </div>
@@ -28,8 +29,27 @@ function MyPage() {
                     :''}
                 </div>
             <div>
-                구매내역
-                전자영수증
+                    <nav className={style.icon}>
+                        <ul>
+                            <li className={style.doc}>
+                                <img src={documentImg} alt='detailed purchase list'/>
+                                <p style={{ paddingRight: "14px"}}>구매내역</p>
+                            </li>
+                            <li className={style.bill}>
+                                <img src={billImg} alt='e-receipt'/>
+                                <p>전자영수증</p>
+                            </li>
+                            <li className={style.cou}>
+                                <img src={couponImg} alt='coupon'/>
+                                <p>쿠폰함</p>
+                            </li>
+                            <li className={style.pay}>
+                                <img src={payImg} alt='ssgpay'/>
+                                <p>SSGPAY</p>
+                            </li>
+                        </ul>
+                    </nav>
+                <div className={style.footer}></div>
             </div>
 
 

@@ -67,3 +67,8 @@
     text-align: center;
     border: #57565A solid 2px;
 }
+
+.errMessageWrap {
+    color: #FAB427;
+    font-size: 12px;
+}

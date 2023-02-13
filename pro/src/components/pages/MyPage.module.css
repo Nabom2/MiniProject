@@ -9,11 +9,12 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 60px;
+    height: 85px;
 }
 
 .header h3 {
-    margin-left: 10px;
-    font-size: 18px;
+    margin-left: 30px;
+    font-size: 20px;
 }
 
 .header ul {
@@ -44,4 +45,53 @@
     text-align: center;
     color: #FAB427;
     margin-bottom: 60px
+}
+
+
+.icon {
+    background-color: #FAB427;
+    margin: 20px 0;
+    height: 150px;
+}
+
+.icon ul {
+    display: flex;
+    margin-right: 20px;
+    font-size: 9px;
+    color: white;
+    text-align: center;
+}
+
+.icon ul li {
+    list-style: none;
+    margin-right: 25px;
+    padding-top: 30px;
+}
+
+.doc img {
+    width: 60px;
+    height: 60px;
+}
+
+.bill img {
+    width: 60px;
+    height: 60px;
+}
+
+.cou img {
+        width: 60px;
+        height: 60px;
+    }
+
+.pay img {
+        width: 60px;
+        height: 60px;
+}
+
+.footer {
+    background-color: #57565A;
+    border: #57565A solid 2px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    height: 85px;
 }

@@ -36,14 +36,15 @@ function MainCard({product}) {
         <div className={style.MainCard}>
             <Link to = {`/product-detail/${product.id}`}>
             <img src={product.thumbnail } alt={product.description}/>
-            <p>{product.name}</p>
-            <p><span>{product.price}원</span></p>
-            </Link>
             <div
             onClick={handleAddCart}
             className={style.cartButton}>
             <img src={cartButtonimg} alt='add cart'/>
             </div>
+            <p>{product.name}</p>
+            {/* <p><span>{product.price}원</span></p> */}
+            </Link>
+            
         </div>
         </>
      );

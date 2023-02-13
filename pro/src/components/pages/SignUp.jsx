@@ -26,6 +26,14 @@ function SignUp() {
         })
     }
 
+//     if(signUpData.password === '' || signUpData.passwordCheck === '') {
+//         alert('비밀번호를 입력해주세요.')
+//         return;
+// } else if (signUpData.password !== signUpData.passwordCheck) {
+//     alert('비밀번호가 일치하지 않습니다.')
+//     return;
+// }
+
     const handleSignUp = (e) => {
         e.preventDefault();
         fetch('http://localhost:3001/users', {
@@ -54,34 +62,38 @@ function SignUp() {
                     <input className={style.input}
                         type='text'
                         placeholder=' 이름 입력'
-                        name='name'
+                        name ='name'
                         value={signUpData.name}
                         onChange={handleChange}/>
                 </div>
+
                 <div  style={{ marginBottom: "30px"}}>
                     <input className={style.input} 
                     type='text'
                     placeholder=' 이메일 입력'
-                    name='email'
+                    name ='email'
                     value={signUpData.email}
                     onChange={handleChange}/>                   
                 </div>
+
                 <div style={{ marginBottom: "30px"}}>
                     <input className={style.inputPass} 
                     type='password'
                     placeholder=' 비밀번호 입력'
-                    name='password'
+                    name ='password'
                     value={signUpData.password}
                     onChange={handleChange}/> 
                 </div>
+
                 <div>
                     <input className={style.inputPass}
                     type='password'
                     placeholder=' 비밀번호 재입력'
-                    name='passwordCheck'
-                    value={signUpData.pass}
+                    name ='passwordCheck'
+                    value={signUpData.passwordCheck}
                     onChange={handleChange}/>
                 </div>
+
             </div>
 
             <div>

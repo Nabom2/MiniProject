@@ -1,25 +1,25 @@
 /* db데이터의 eventproduct 모양을 다듬어 보도록 하자 */
 .MainCard {
     margin : auto;
-    padding: 10px 20px;
-    margin-bottom: 20px;
-    margin-top: 140px;
+    padding: 40px 20px;
+    margin-top: 10px;
     /* margin-top은 section 디자인 변경할때 손보기 header에 먹히는 issue 있음 */
 }
 
 .MainCard img {
     width: 100%;
     height: auto;
-    border-radius: 30px;
 }
 
-.MainCard p:last-child{
-    color: red;
+.MainCard p{
+    margin-top: -27px;
 }
 
 .MainCard a {
     text-decoration: none;
-    color: #222;
+    color: #57565A;
+    font-size: 18px;
+    text-align: center;
 }
 
 .cartButton {
@@ -31,6 +31,8 @@
     text-align: center;
     box-sizing: border-box;
     padding: 5px;
+    margin-top: -28px;
+    text-align: end;
 }
 
 .cartButton img {
