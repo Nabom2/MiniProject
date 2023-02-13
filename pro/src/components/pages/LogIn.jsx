@@ -1,37 +1,48 @@
-import React, { useReducer } from 'react';
+import React, { useState } from 'react';
+// style
 import style from './LogIn.module.css';
-import {Link,useNavigate} from 'react-router-dom';
-import { loginImg } from '../../data/headerMenu';
-import { useState } from 'react';
+// libray
+import { Link, useNavigate } from 'react-router-dom';
+// golbal state
 import { useRecoilState } from 'recoil';
 import { logInState } from '../../state/logInState';
-import { useEffect } from 'react';
+// static data
+import { loginImg } from '../../data/headerMenu';
 
 function LogIn() {
 
     const Navigate = useNavigate();
-    const [email, setEmail] = useState('');
-    const [pass, setPass]= useState('');
+
+    // const [email, setEmail] = useState('');
+    // const [pass, setPass]= useState('');
     const [isLogin, setIsLogin] = useRecoilState(logInState);
 
-    // useEffect(() => {
-    // console.log(isLogin)
-    // },[email, pass])
+    const [userData, setUserData] = useState({
+        email: '',
+        pass: ''
+    });
 
-    console.log(logInState)
-
-    const handleEmail = (e) => {
-        setEmail(e.target.value);
-        console.log(e.target.value);
-    }
+    // const handleEmail = (e) => {
+    //     setEmail(e.target.value);
+    //     console.log(e.target.value);
+    // }
     
-    const handlePass = (e) => {
-        setPass(e.target.value);
+    // const handlePass = (e) => {
+    //     setPass(e.target.value);
+    // }
+
+    const handleChange = (e) => {
+        console.log(e.target.value);
+        const { name, value } = e.target;
+        setUserData({
+            ...userData,
+            [name]:value
+        })
     }
 
     const handleLogIn = (e) => {
         e.preventDefault();
-        fetch(`http://localhost:3001/users?email=${email}&password=${pass}`, {
+        fetch(`http://localhost:3001/users?email=${userData.email}&password=${userData.pass}`, {
             method: 'GET',
             headers: { 'Content-Type': 'application/json'}
         })
@@ -41,7 +52,7 @@ function LogIn() {
             // setEmail(data)
             // setPass(data)
             setIsLogin(true);
-            if(data[0].password === pass) {
+            if(data[0].password === userData.pass) {
                 alert('환영합니다 이마트 무인편의점 매장입니다. 입장을 위해 QR코드 발급 부탁드립니다.');
                 Navigate('/check-in');
             } else {
@@ -65,18 +76,25 @@ function LogIn() {
                             type='text'
                             className={style.input} 
                             placeholder='emart24@shinsegae.com'
-                            value={email}
-                            onChange={handleEmail}/>
+                            name='email'
+                            value={userData.email}
+                            onChange={handleChange}
+                        />
                     </div>
                     <div
                         type='password'
-                        style={{ marginBottom: "10px"}} className={style.inputWrap}>
-                        <input className={style.input} 
-                        value={pass}
-                        onChange={handlePass}/>
+                        style={{ marginBottom: "10px"}} className={style.inputWrap}
+                    >
+                        <input 
+                            type='password'
+                            className={style.input} 
+                            name='pass'
+                            value={userData.pass}
+                            onChange={handleChange}
+                        />
                     </div>  
                     <div>
-                        <button onSubmit={handleLogIn} onClick={handleLogIn} className={style.loginButton}>로그인</button> 
+                        <button type="submit" className={style.loginButton}>로그인</button> 
                     </div>
                 </div>
             </form>
