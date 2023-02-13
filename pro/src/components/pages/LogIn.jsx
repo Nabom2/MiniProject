@@ -13,8 +13,6 @@ function LogIn() {
 
     const Navigate = useNavigate();
 
-    // const [email, setEmail] = useState('');
-    // const [pass, setPass]= useState('');
     const [isLogin, setIsLogin] = useRecoilState(logInState);
 
     const [userData, setUserData] = useState({
@@ -22,14 +20,6 @@ function LogIn() {
         pass: ''
     });
 
-    // const handleEmail = (e) => {
-    //     setEmail(e.target.value);
-    //     console.log(e.target.value);
-    // }
-    
-    // const handlePass = (e) => {
-    //     setPass(e.target.value);
-    // }
 
     const handleChange = (e) => {
         console.log(e.target.value);
@@ -65,9 +55,6 @@ function LogIn() {
     
     return ( 
         <div>  
-            {
-             !isLogin ? 
-             <>
             <form onSubmit={handleLogIn}>
                 <div className={style.logInWrap}>
                     <div className={style.loginPic}><img src={loginImg} alt='login image'/></div>
@@ -82,7 +69,6 @@ function LogIn() {
                         />
                     </div>
                     <div
-                        type='password'
                         style={{ marginBottom: "10px"}} className={style.inputWrap}
                     >
                         <input 
@@ -99,16 +85,9 @@ function LogIn() {
                 </div>
             </form>
             <div className={style.relativeLink}>
-                <div className={style.seekPass}>비밀번호를 잊어버리셨나요?<Link to='/seeking-password'><span>비밀번호찾기</span></Link></div>
-                <div className={style.signUp}>계정이 없으신가요?<Link to='/sign-up'><span>가입하기</span></Link></div>
+                {/* <div className={style.seekPass}>비밀번호를 잊어버리셨나요? <Link to='/seeking-password'><span>비밀번호찾기</span></Link></div> */}
+                <div className={style.signUp}>계정이 없으신가요? <Link to='/sign-up'><span>가입하기</span></Link></div>
             </div>
-            </>
-            :
-            <div style={{height: "300px"}}>
-            {/* <button onSubmit={handleLogIn} onClick={handleLogIn} className={style.logoutButton}>로그아웃</button>  */}
-            로그아웃
-            </div>
-            }
         </div>
      );
 }

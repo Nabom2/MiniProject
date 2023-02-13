@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import style from './ProductDetail.module.css';
+import withAuth from '../withAuth/withAuth';
 
 function ProductDetail() {
 
@@ -37,4 +38,4 @@ return (
    );
 }
 
-export default ProductDetail;
+export default withAuth(ProductDetail);

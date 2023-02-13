@@ -2,6 +2,8 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import CartListCard from '../ui/CartListCard';
 import style from './Cart.module.css';
+import withAuth from '../withAuth/withAuth';
+
 
 function Cart() {
 
@@ -34,4 +36,4 @@ function Cart() {
      );
 }
 
-export default Cart;
+export default withAuth(Cart);

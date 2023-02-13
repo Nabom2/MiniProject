@@ -157,6 +157,18 @@
       "name": "허선아",
       "email": "dinuovo26@naver.com",
       "password": "2345"
+    },
+    {
+      "id": 3,
+      "name": "김철수",
+      "email": "kkkk@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": 4,
+      "name": "dddd",
+      "email": "dddd",
+      "password": "dddd"
     }
   ],
   "carts": [

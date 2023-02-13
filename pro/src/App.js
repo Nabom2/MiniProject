@@ -12,6 +12,7 @@ import Footer from './components/layout/Footer';
 import SeekingPass from './components/pages/SeekingPass';
 import { useRecoilValue } from 'recoil';
 import { logInState } from './state/logInState';
+import MyPage from './components/pages/MyPage'; 
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
                   <Route path='/login' element={<LogIn/>}/>
                   <Route path='/seeking-password' element={<SeekingPass/>}/>
                   <Route path='/sign-up' element={<SignUp/>}/>
+                  <Route path='/mypage' element={<MyPage/>}/>
                 </Routes>
             <Footer/>
         </BrowserRouter>
