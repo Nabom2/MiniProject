@@ -54,6 +54,7 @@ function SignUp() {
                     <input className={style.input}
                         type='text'
                         placeholder=' 이름 입력'
+                        name='name'
                         value={signUpData.name}
                         onChange={handleChange}/>
                 </div>
@@ -61,6 +62,7 @@ function SignUp() {
                     <input className={style.input} 
                     type='text'
                     placeholder=' 이메일 입력'
+                    name='email'
                     value={signUpData.email}
                     onChange={handleChange}/>                   
                 </div>
@@ -68,6 +70,7 @@ function SignUp() {
                     <input className={style.inputPass} 
                     type='password'
                     placeholder=' 비밀번호 입력'
+                    name='password'
                     value={signUpData.password}
                     onChange={handleChange}/> 
                 </div>
@@ -75,6 +78,7 @@ function SignUp() {
                     <input className={style.inputPass}
                     type='password'
                     placeholder=' 비밀번호 재입력'
+                    name='passwordCheck'
                     value={signUpData.pass}
                     onChange={handleChange}/>
                 </div>
