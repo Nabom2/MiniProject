@@ -7,8 +7,9 @@
     color: aliceblue;
     border: #ffb71b solid 2px;
     background-color: #ffb71b;
+    border-radius: 15px;
     height: 29px;
-    width: 180px;
+    width: 190px;
     font-size: 25px;
     margin: 30px auto;
     font-weight: normal;

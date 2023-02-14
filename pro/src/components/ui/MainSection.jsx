@@ -2,6 +2,7 @@ import MainCard from './MainCard';
 import { useState, useEffect } from 'react';
 import style from './MainSection.module.css';
 import { sectionImg } from '../../data/headerMenu'
+import { Link } from 'react-router-dom';
 
 function MainSection() {
     
@@ -22,7 +23,7 @@ function MainSection() {
     return ( 
         <section className={style.MainSection}>
             <h6>2월의 이벤트상품</h6>
-            <div className={style.sectionCard}><img src={sectionImg} alt='section'/></div>
+            <div className={style.sectionCard}><Link to ='/'><img src={sectionImg} alt='section'/></Link></div>
 
             <div className={style.MainSectionWrap}>
             {
