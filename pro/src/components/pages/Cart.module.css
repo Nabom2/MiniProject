@@ -1,7 +1,13 @@
-/* .cartListWrap {
+.cartListWrap {
     width: 100;
     margin-top: 120px;
     padding: 0 14px 100px 14px;
     box-sizing: border-box;
 }
- */
+
+.cartListWrap h2 {
+    text-align: center;
+    color: #57565A;
+    margin-bottom: 60px;
+    
+}

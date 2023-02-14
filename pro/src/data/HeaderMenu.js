@@ -11,6 +11,7 @@ import couponIcon from '../components/images/online.png'
 import documentIcon from '../components/images/document.png'
 import billIcon from '../components/images/receipt1.png'
 import payIcon from '../components/images/payy.png'
+import section from '../components/images/section.jpg'
 
 export const headerMenu = [
     {
@@ -48,4 +49,6 @@ export const billImg = billIcon
 export const documentImg = documentIcon
 
 export const payImg = payIcon
+
+export const sectionImg = section
 

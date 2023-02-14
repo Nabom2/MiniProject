@@ -1,13 +1,15 @@
 .cartListCard {
     width: 100%;
-    margin-top: 140px;
     padding-left: 15px;
+    margin-bottom: 70px;
 }
 
 
 .cartListCard h4 {
     margin: 0;
     padding-bottom: 20px;
+    font-size: 18px;
+    color: #ffb71b;
 }
 
 .cartListCardInfo{
@@ -20,6 +22,7 @@
     width: 40vw;
     height: auto;
     border-radius: 30px;
+    border: #ffb71b solid 3px;
 }
 
 .cartStatus{
@@ -32,22 +35,37 @@
     align-items: center;
 }
 
+.qtyHandler p {
+    margin-top: 50px;
+    font-weight: bold;
+    color: #57565A;
+}
+
 .deleteButton img{
     width: 20px;
     height: 20px;
+    border-style: none;
+    margin-top: 35px;
 }
 
 .subButton img{
     width: 15px;
     height: 15px;
+    border-style: none;
+    margin-top: 35px;
 }
 
 .addButton img{
     width: 15px;
     height: 15px;
+    border-style: none;
+    margin-top: 35px;
 }
 
 .cartStatus p:last-child{
-    color: red;
+    color: #57565A;
+    font-weight: bold;
     text-align: right;
+    width: 90%;
+    margin-top: 20px;
 }

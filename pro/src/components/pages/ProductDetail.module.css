@@ -4,22 +4,42 @@
     padding: 10px 30px;
     margin-bottom: 20px;
     margin-top: 80px;
-
+    color: #FAB427;
 }
 
 .productWrap img {
-    width: 100%;
+    width: 80%;
     height: auto;
     border-radius: 30px;
+    border: 3px solid #FAB427;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.productWrap h2 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.productWrap p:nth-child(3){
+    width: 20%;
+    text-align: end;
+    margin-top: 30px;
+    font-size: 20px;
 }
 
 .productWrap p:nth-child(5){
-    color: red;
+    text-align: end;
+    width: 95%;
+    text-align: end;
+    font-size: 18px;
+    font-size: bold;
+    height: 60px;
 }
 
-/* .productWrap span {
-    후처리
-} */
+.productWrap p span {
+    color: #57565A;
+}
 
 .productWrap p:first-child {
     color: lightgray;

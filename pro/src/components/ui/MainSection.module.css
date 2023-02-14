@@ -1,5 +1,29 @@
-/* .MainSectioin{
-    margin-top: 100%;
-    padding: 30px 14px;
-} */
+.MainSection {
+    margin-top: 140px;
+}
 
+.MainSection h6 {
+    text-align: center;
+    color: aliceblue;
+    border: #ffb71b solid 2px;
+    background-color: #ffb71b;
+    height: 29px;
+    width: 180px;
+    font-size: 25px;
+    margin: 30px auto;
+    font-weight: normal;
+    
+}
+
+.sectionCard img {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.MainSectionWrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}

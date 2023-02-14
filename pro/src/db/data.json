@@ -13,7 +13,7 @@
     },
     {
       "id": 2,
-      "name": "킷캣 오리지널 18입",
+      "name": "킷캣 오리지널 18입 320g",
       "thumbnail": "https://sitem.ssgcdn.com/21/16/61/item/1000529611621_i1_1100.jpg",
       "price": 9980,
       "discount": 0,
@@ -68,17 +68,6 @@
     },
     {
       "id": 7,
-      "name": "농심 조청유과 96g",
-      "thumbnail": "https://sitem.ssgcdn.com/44/20/83/item/1000020832044_i1_1100.jpg",
-      "price": 1360,
-      "discount": 0,
-      "description": "(주)농심 / 서울특별시 동작구 여의대방로 112(신대방동)",
-      "category": "과자(유탕처리제품)",
-      "brand": "(주)농심",
-      "rating": 4.9
-    },
-    {
-      "id": 8,
       "name": "쇼게튼 다크초콜릿 위드 코코아 헤이즐넛 100g",
       "thumbnail": "https://sitem.ssgcdn.com/60/71/07/item/2097001077160_i1_1100.jpg",
       "price": 3200,
@@ -87,6 +76,17 @@
       "category": "초콜릿",
       "brand": "(주)가온누리코퍼레이션",
       "rating": 4.8
+    },
+    {
+      "id": 8,
+      "name": "미에슈코 에스프레소프랄린 153g",
+      "thumbnail": "https://sitem.ssgcdn.com/60/27/77/item/1000529772760_i1_1100.jpg",
+      "price": 8980,
+      "discount": 0,
+      "description": "미에슈코_에스프레소_프랄린 153g, 폴란드 (제조국 : 폴란드)",
+      "category": "초콜릿가공품",
+      "brand": "(주)천하코퍼레이션",
+      "rating": 5
     },
     {
       "id": 9,
@@ -101,14 +101,14 @@
     },
     {
       "id": 10,
-      "name": "미에슈코 에스프레소프랄린 153g",
-      "thumbnail": "https://sitem.ssgcdn.com/60/27/77/item/1000529772760_i1_1100.jpg",
-      "price": 8980,
+      "name": "농심 조청유과 96g",
+      "thumbnail": "https://sitem.ssgcdn.com/44/20/83/item/1000020832044_i1_1100.jpg",
+      "price": 1360,
       "discount": 0,
-      "description": "미에슈코_에스프레소_프랄린 153g, 폴란드 (제조국 : 폴란드)",
-      "category": "초콜릿가공품",
-      "brand": "(주)천하코퍼레이션",
-      "rating": 5
+      "description": "(주)농심 / 서울특별시 동작구 여의대방로 112(신대방동)",
+      "category": "과자(유탕처리제품)",
+      "brand": "(주)농심",
+      "rating": 4.9
     }
   ],
   "events": [
@@ -153,34 +153,16 @@
       "password": "1234"
     },
     {
-      "id": 2,
+      "name": "김이나",
+      "email": "Ina2424@gmail.com",
+      "password": "1234",
+      "id": 3
+    },
+    {
       "name": "허선아",
       "email": "dinuovo26@naver.com",
-      "password": "2345"
-    },
-    {
-      "id": 3,
-      "name": "김철수",
-      "email": "kkkk@gmail.com",
-      "password": "1234"
-    },
-    {
-      "id": 4,
-      "name": "dddd",
-      "email": "dddd",
-      "password": "dddd"
-    },
-    {
-      "id": 5
-    },
-    {
-      "id": 6
-    },
-    {
-      "id": 7
-    },
-    {
-      "id": 8
+      "password": "1234",
+      "id": 4
     }
   ],
   "carts": []

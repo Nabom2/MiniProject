@@ -8,10 +8,11 @@ const withAuth = ( WrappedComponent ) => {
     return ( props ) => {
         const navigate = useNavigate();
         const isLogin = useRecoilValue(logInState);
-        if( !isLogin) {
-            alert('로그인이 필요합니다.');
+        if(!isLogin) {
             useEffect( () => {
+                console.log('123');
                 navigate('/login');
+                alert('로그인이 필요한 서비스입니다.')
             },[])
             return null;
         }

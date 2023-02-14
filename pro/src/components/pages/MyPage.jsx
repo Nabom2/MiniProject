@@ -4,13 +4,13 @@ import withAuth from '../withAuth/withAuth';
 import { useRecoilState, useRecoilValue } from 'recoil';
 import { logInState } from '../../state/logInState';
 import { Link } from 'react-router-dom'
-import { userNameState } from '../../state/userNameState';
+import { userState } from '../../state/userNameState';
 import { couponImg ,billImg, documentImg, payImg } from'../../data/headerMenu.js';
 
 function MyPage() {
 
     const [isLogin, setIsLogin] = useRecoilState(logInState);
-    const userName = useRecoilValue(userNameState);
+    const { name } = useRecoilValue(userState);
 
     return ( 
         <div>
@@ -25,7 +25,7 @@ function MyPage() {
             </div>
                 <div className={style.customer}>
                     { isLogin ?
-                    `${userName}님 반갑습니다.`
+                    `${name}님 반갑습니다.`
                     :''}
                 </div>
             <div>

@@ -23,6 +23,7 @@ function Cart() {
 
     return ( 
         <div className={style.cartListWrap}>
+            <h2>카 트</h2>
              {
             cartDatas && cartDatas.map( cartData => (
             <CartListCard 

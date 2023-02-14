@@ -2,12 +2,15 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import style from './MainCard.module.css';
 import { cartButtonimg } from '../../data/headerMenu';
+import { useRecoilState } from 'recoil';
+import { logInState } from '../../state/logInState';
 
 function MainCard({product}) {
 
     const userId = 1;
 
     const Navigate = useNavigate();
+    const [isLogin, setIsLogin] = useRecoilState(logInState);
 
     const handleAddCart = () => {
         fetch('http://localhost:3001/carts', {
@@ -34,17 +37,15 @@ function MainCard({product}) {
     return ( 
         <>
         <div className={style.MainCard}>
-            <Link to = {`/product-detail/${product.id}`}>
-            <img src={product.thumbnail } alt={product.description}/>
-            <div
+       { isLogin ? <div
             onClick={handleAddCart}
             className={style.cartButton}>
             <img src={cartButtonimg} alt='add cart'/>
-            </div>
+            </div> : '' }
+            <Link to = {`/product-detail/${product.id}`}>
+            <img src={product.thumbnail } alt={product.description}/>
             <p>{product.name}</p>
-            {/* <p><span>{product.price}원</span></p> */}
             </Link>
-            
         </div>
         </>
      );

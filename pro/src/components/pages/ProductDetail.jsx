@@ -25,11 +25,11 @@ return (
                 <>
             <p>홈 > {product.category}</p>
             <img src={product.thumbnail} alt={product.description}/>
-            <h2>{product.name}</h2>
             <p>⭐ {product.rating}</p>
-            <p><span>{product.price - (product.price * product.discount)}원</span></p>
-            <p>{product.description}</p>
-            <p>제조사 : {product.brand}</p>
+            <h2>{product.name}</h2>
+            <p><span>{product.price.toLocaleString('ko-KR')}원</span></p>
+            <p><span>{product.description}</span></p>
+            <p><span>제조사 : {product.brand}</span></p>
         </>)}
           </div>
       

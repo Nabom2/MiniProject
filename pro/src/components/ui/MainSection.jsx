@@ -1,6 +1,7 @@
 import MainCard from './MainCard';
 import { useState, useEffect } from 'react';
 import style from './MainSection.module.css';
+import { sectionImg } from '../../data/headerMenu'
 
 function MainSection() {
     
@@ -20,6 +21,10 @@ function MainSection() {
 
     return ( 
         <section className={style.MainSection}>
+            <h6>2월의 이벤트상품</h6>
+            <div className={style.sectionCard}><img src={sectionImg} alt='section'/></div>
+
+            <div className={style.MainSectionWrap}>
             {
                 productData && productData.map( product => (
                 <MainCard
@@ -27,6 +32,7 @@ function MainSection() {
                 product={product}/>
                 ))
             }
+            </div>
         </section>
      );
 }

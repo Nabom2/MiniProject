@@ -6,6 +6,7 @@ import { Link, useNavigate } from 'react-router-dom';
 // golbal state
 import { useRecoilState } from 'recoil';
 import { logInState } from '../../state/logInState';
+import { userState } from '../../state/userNameState';
 // static data
 import { loginImg } from '../../data/headerMenu';
 
@@ -14,6 +15,7 @@ function LogIn() {
     const Navigate = useNavigate();
 
     const [isLogin, setIsLogin] = useRecoilState(logInState);
+    const [userStateData, setUserStateData] = useRecoilState(userState);
 
     const [userData, setUserData] = useState({
         email: '',
@@ -22,7 +24,7 @@ function LogIn() {
 
 
     const handleChange = (e) => {
-        console.log(e.target.value);
+        // console.log(e.target.value);
         const { name, value } = e.target;
         setUserData({
             ...userData,
@@ -39,6 +41,12 @@ function LogIn() {
         .then(res => res.json())
         .then(data => {
             console.log(data)
+            setUserStateData({
+                ...userStateData,
+                userId: data[0].id,
+                name: data[0].name,
+                email: data[0].email,
+            });
             // setEmail(data)
             // setPass(data)
             setIsLogin(true);
@@ -46,7 +54,7 @@ function LogIn() {
                 alert('환영합니다 이마트 무인편의점 매장입니다. 입장을 위해 QR코드 발급 부탁드립니다.');
                 Navigate('/check-in');
             } else {
-                alert('등록되지 않은 회원입니다.');
+                alert('비밀번호가 일치하지 않습니다.')
             }
         })
         .catch(err => console.log(err))

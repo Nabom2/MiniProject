@@ -1,15 +1,17 @@
 .SingUPWrap {
-    margin-top: 121px;
+    margin: 160px auto;
     text-align: center;
 }
 
+
 .top {
-    color: #FAB427;
-    background-color: #57565A;
+    color: #57565A;
+    /* background-color: #57565A; */
     margin-top: 120px;
-    font-size: 23px;
+    font-size: 20px;
+    font-weight: bold;
     text-align: center;
-    border: #57565A solid 2px;
+    /* border: #57565A solid 2px; */
 }
 
 .info {
@@ -19,46 +21,50 @@
  }
 
 .input {
-    width: 190px;
-    height: 32px;
+    width: 250px;
+    height: 40px;
     outline: none;
-    border-radius: 10px;
+    border-radius: 30px;
+    border: #FAB427 solid 1px;
+    text-align: center;
 }
 
 .inputPass {
-    width: 190px;
-    height: 32px;
+    width: 250px;
+    height: 40px;
     outline: none;
-    border-radius: 10px;
+    border-radius: 30px;
+    border: #FAB427 solid 1px;
     -webkit-text-security: disc;
+    text-align: center;
 }
 
 .input::placeholder {
-    color : #57565A;
+    color : #FAB427;
 }
 
 .inputPass::placeholder {
-    color : #57565A;
+    color : #FAB427;
 }
 
 .input:focus-within {
-    border: 1px solid #FAB427;
+    border: 1px solid #57565A;
 }
 
 .inputPass:focus-within {
-    border: 1px solid #FAB427;
+    border: 1px solid #57565A;
 }
 
 .bottom {
     text-align: center;
-    border: #FAB427 solid 2px;
+    border: none;
     background-color: #FAB427;
     cursor: pointer;
     font-size: 20px;
-    color: #57565A;
+    color: #fff;
 }
 
-.under {
+/* .under {
     background-color: #57565A;
     margin-top: 70px;
     margin-bottom: 40px;
@@ -66,9 +72,4 @@
     font-size: 23px;
     text-align: center;
     border: #57565A solid 2px;
-}
-
-.errMessageWrap {
-    color: #FAB427;
-    font-size: 12px;
-}
+} */
