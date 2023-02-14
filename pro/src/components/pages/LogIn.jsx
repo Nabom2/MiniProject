@@ -51,7 +51,7 @@ function LogIn() {
             // setPass(data)
             setIsLogin(true);
             if(data[0].password === userData.pass) {
-                alert('환영합니다 이마트 무인편의점 매장입니다. 입장을 위해 QR코드 발급 부탁드립니다.');
+                alert('환영합니다 이마트 무인편의점 매장입니다. 입장을 위해 QR코드 발급해주세요.');
                 Navigate('/check-in');
             } else {
                 alert('비밀번호가 일치하지 않습니다.')
