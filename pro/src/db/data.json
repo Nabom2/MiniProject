@@ -156,13 +156,7 @@
       "name": "김이나",
       "email": "Ina2424@gmail.com",
       "password": "1234",
-      "id": 3
-    },
-    {
-      "name": "허선아",
-      "email": "dinuovo26@naver.com",
-      "password": "1234",
-      "id": 4
+      "id": 2
     }
   ],
   "carts": []
